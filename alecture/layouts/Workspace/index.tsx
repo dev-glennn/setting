@@ -3,6 +3,7 @@ import axios from 'axios';
 import React, { FC, useCallback } from 'react';
 import useSWR from 'swr';
 import { Redirect } from 'react-router-dom';
+import {} from './styles';
 
 const Workspace: FC = ({ children }) => {
   const { data, error, revalidate, mutate } = useSWR('http://localhost:3095/api/users', fetcher);
